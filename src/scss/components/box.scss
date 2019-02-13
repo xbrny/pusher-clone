@@ -1,0 +1,18 @@
+.box {
+
+  &.is-light {
+    background-color: $gray;
+    color: $primary;
+  }
+
+  &.is-accented {
+    border-radius: 0px;
+    box-shadow: 7px -7px 0 0 $green;
+  }
+
+  &.is-transparent {
+    background-color: transparent;
+    color: $primary;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,17 @@
+.code-box {
+  background: $gray;
+  border-radius: $radius;
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(darken($gray, 20), 0.2);
+  }
+}

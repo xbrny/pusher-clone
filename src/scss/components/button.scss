@@ -1,0 +1,49 @@
+.button {
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: $weight-bold;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12);
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.12);
+    transform: translate3d(0px, -1px, 0px);
+  }
+
+  &.is-text {
+    text-decoration: none;
+    color: $green;
+    box-shadow: none;
+
+    &:hover,
+    &.is-hovered,
+    &:focus,
+    &.is-focused {
+      background-color: transparent;
+      color: $green-darker;
+    }
+
+    &:active,
+    &.is-active {
+      background-color: transparent;
+      color: $green-darker;
+    }
+    &[disabled] {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &.is-primary {
+    &.is-inverted {
+      &:hover,
+      &.is-hovered,
+      &:focus,
+      &.is-focused {
+        background-color: $white;
+      }
+    }
+  }
+}

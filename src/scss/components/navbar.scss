@@ -1,0 +1,43 @@
+.navbar {
+  &-logo {
+    color: $primary;
+    font-size: 1.75rem;
+    font-family: $family-header;
+    text-transform: uppercase;
+    font-weight: $weight-bold;
+    position: relative;
+
+    &-tag {
+      background: $green;
+      color: white;
+      font-family: $family-primary;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.4rem;
+      letter-spacing: 1px;
+      border-radius: 2px;
+      position: relative;
+      top: -1.2em;
+    }
+  }
+
+  &-start {
+    @include desktop {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-item {
+    font-weight: $weight-bold;
+  }
+
+  &-dropdown {
+    @include desktop {
+      width: 300px;
+    }
+  }
+
+  &-divider {
+    background-color: darken($gray, 1.5);
+  }
+}

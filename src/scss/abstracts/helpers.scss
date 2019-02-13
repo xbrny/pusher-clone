@@ -1,0 +1,38 @@
+$spaces: (
+  0: 0,
+  1: 0.5rem,
+  2: 1rem,
+  3: 2rem,
+  4: 3rem,
+  5: 4rem,
+);
+
+@each $i, $size in $spaces {
+  .p-#{$i} { padding: ($size) !important; }
+  .m-#{$i} { margin: ($size) !important; }
+  .pt-#{$i} { padding-top: ($size) !important; }
+  .pb-#{$i} { padding-bottom: ($size) !important; }
+  .pl-#{$i} { padding-left: ($size) !important; }
+  .pr-#{$i} { padding-right: ($size) !important; }
+  .px-#{$i} { padding-left: ($size) !important; padding-right: ($size) !important; }
+  .py-#{$i} { padding-top: ($size) !important; padding-bottom: ($size) !important; }
+  .mt-#{$i} { margin-top: ($size) !important; }
+  .mb-#{$i} { margin-bottom: ($size) !important; }
+  .ml-#{$i} { margin-left: ($size) !important; }
+  .mr-#{$i} { margin-right: ($size) !important; }
+  .mx-#{$i} { margin-left: ($size) !important; margin-right: ($size) !important; }
+  .my-#{$i} { margin-top: ($size) !important; margin-bottom: ($size) !important; }
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}

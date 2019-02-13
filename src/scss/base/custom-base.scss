@@ -1,0 +1,7 @@
+// Generic
+html {
+  @include tablet {
+    $body-size: 20px;
+    font-size: $body-size;
+  }
+}

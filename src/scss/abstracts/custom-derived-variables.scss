@@ -1,0 +1,23 @@
+$primary: $purple-dark;
+$green-invert: $white;
+$green-darker: darken($green, 2);
+// Text color
+$text: $purple-light;
+
+// Link color
+$link: $green;
+$link-invert: $green-invert;
+$link-visited: $purple;
+
+$link-hover: $green-darker;
+$link-hover-border: $green;
+
+$link-focus: $green-darker;
+$link-focus-border: $green;
+
+$link-active: $green-darker;
+$link-active-border: $green-darker;
+
+// Typography
+$family-primary: $family-lato;
+$family-header: $family-staatliches;

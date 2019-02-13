@@ -1,0 +1,10 @@
+.card {
+  &.is-light {
+    background-color: $gray;
+    color: $primary;
+
+    .card-header-title {
+      color: $primary;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.section-home {
+  min-height: 70vh;
+
+  & .hero-body {
+    background-image: url(https://djmmlc8gcwtqv.cloudfront.net/imgs/homepage/desktop-home-fold.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &-code {
+    display: inline-block;
+    padding: 1.5rem 2rem 0.75rem 2rem;
+    background-color: $white;
+    box-shadow: $custom-box-shadow-hover;
+    border-radius: $radius;
+    color: $primary;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: $primary;
+      height: 20px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: $green;
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      right: 10px;
+      top: 4px;
+      border-radius: 100%;
+    }
+  }
+
+  &-buttons {
+    justify-content: center;
+  }
+}
+
+.section-channels {
+  .subtitle {
+    line-height: 2;
+  }
+
+  .card-title-column {
+    min-width: 250px;
+  }
+}
+
+.section-products {
+  @include tablet {
+    .box {
+      min-height: 300px;
+      position: relative;
+    }
+
+    .card-button-bottom {
+      position: absolute;
+      bottom: 20px;
+      padding-left: 0;
+    }
+  }
+}
+
+.footer-list {
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: $text;
+  }
+}
